@@ -1285,10 +1285,21 @@
             .modal {
                 width: 98%;
                 margin: 10px; /* Add margin to prevent touching edges */
+                grid-template-columns: 1fr; /* Stack image and content vertically */
             }
             
             .modal-image {
                 height: 200px; /* Smaller image height on very small screens */
+                /* Ensure image scales correctly within this container */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .modal-image img {
+                max-width: 100%; /* Ensure image doesn't overflow */
+                height: auto; /* Maintain aspect ratio */
+                object-fit: contain; /* Fit image within its content box */
             }
             
             .modal-content {
@@ -2616,3 +2627,4 @@
     </script>
 </body>
 </html>
+
