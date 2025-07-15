@@ -2459,7 +2459,7 @@
         // Google Sheets Integration
         const SPREADSHEET_ID = '1wCyhI62ELSGj1FkK7QYk_TagTO25HO0Fl9eswjoGKQE';
         const API_KEY = 'AIzaSyCpUOYffRL3dlX9V_pSzWFLg0I7Gb67ANg'; // !!! IMPORTANT: Replace with your actual Google Sheets API Key !!!
-        const RANGE = 'products'; // Adjust if your data is in a different sheet or range
+        const name = 'products'; // Adjust if your data is in a different sheet or range
 
         async function fetchProductsFromSheet() {
             const url = `https://sheets.googleapis.com/v4/spreadsheets/1wCyhI62ELSGj1FkK7QYk_TagTO25HO0Fl9eswjoGKQE/values/products?key=AIzaSyCpUOYffRL3dlX9V_pSzWFLg0I7Gb67ANg`;
