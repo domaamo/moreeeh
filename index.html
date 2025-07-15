@@ -766,7 +766,7 @@
         .modal-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain; /* Changed from cover to contain */
         }
 
         .modal-content {
@@ -2557,8 +2557,12 @@
             });
 
             // Load preferences on page load
-            const savedLang = localStorage.getItem('morehLang') || 'en';
-            changeLanguage(savedLang);
+            const savedLang = localStorage.getItem('morehLang');
+            if (savedLang) {
+                changeLanguage(savedLang);
+            } else {
+                changeLanguage('en'); // Default to English if no preference is saved
+            }
 
             const savedDarkMode = localStorage.getItem('morehDarkMode');
             if (savedDarkMode === 'true') {
