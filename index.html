@@ -2517,12 +2517,12 @@
                     <div class="product-overlay">
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
-                        <a href="#" class="quick-view-btn" onclick="event.stopPropagation(); openModal(${index});">Quick View</a>
+                        <a href="javascript:void(0);" class="quick-view-btn" onclick="event.preventDefault(); openModal(${index});">Quick View</a>
                     </div>
                     <div class="product-details">
                         <h3 class="product-title">${product.name}</h3>
                         <div class="product-price">${product.price}</div>
-                        <a href="#" class="product-btn" onclick="event.stopPropagation(); openModal(${index});">View Details</a>
+                        <a href="javascript:void(0);" class="product-btn" onclick="event.preventDefault(); openModal(${index});">View Details</a>
                     </div>
                 `;
                 productsGrid.appendChild(productCard);
