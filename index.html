@@ -742,7 +742,7 @@
             border-radius: 10px;
             width: 90%;
             max-width: 900px;
-            max-height: 90vh;
+            max-height: 90vh; /* Set max height for modal */
             overflow-y: auto; /* Allows vertical scrolling within the modal if content exceeds max-height */
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1283,7 +1283,7 @@
             }
             
             .modal {
-                width: 98%;
+                width: 98%; /* Adjusted width for very small screens */
                 margin: 10px; /* Add margin to prevent touching edges */
                 grid-template-columns: 1fr; /* Stack image and content vertically */
                 max-height: 95vh; /* Ensure modal itself is responsive */
@@ -1346,7 +1346,7 @@
             }
 
             .modal-close {
-                font-size: 20px;
+                font-size: 20px; /* Smaller font size for close button on very small screens */
                 top: 10px;
                 right: 10px;
             }
