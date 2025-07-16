@@ -741,9 +741,8 @@
             background-color: var(--modal-bg); /* Use modal-bg variable */
             border-radius: 10px;
             width: 90%;
-		height: 80%
             max-width: 900px;
-            max-height: 800px; /* Set max height for modal */
+            max-height: 90vh; /* Set max height for modal */
             overflow-y: auto; /* Allows vertical scrolling within the modal if content exceeds max-height */
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -783,7 +782,7 @@
             right: 15px;
             background: none;
             border: none;
-            font-size: 35px;
+            font-size: 24px;
             cursor: pointer;
             color: var(--text-color); /* Ensure close button changes color */
             transition: var(--transition), color 0.5s ease;
@@ -1284,7 +1283,6 @@
             }
             
             .modal {
-		    hight: 90%
                 width: 98%; /* Adjusted width for very small screens */
                 margin: 10px; /* Add margin to prevent touching edges */
                 grid-template-columns: 1fr; /* Stack image and content vertically */
@@ -1683,7 +1681,7 @@
 
             .modal-image img {
                 max-width: 100%; /* Ensure image doesn't overflow */
-                height: 85%; /* Maintain aspect ratio */
+                height: 65%; /* Maintain aspect ratio */
                 object-fit: contain; /* Fit image within its content box */
             }
             
